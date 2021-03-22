@@ -18,11 +18,12 @@
 
 // greeting();
 
-const num1= 6;
-const num2= 4;
+let n1= parseInt(prompt("type a number"));
+let n2= 4;
 
 function mulitply() {
-  return num1 * num2;
+  alert(n1 * n2);
+  return n1 * n2;
 };
 
 mulitply();
