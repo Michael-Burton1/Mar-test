@@ -1,30 +1,19 @@
-// $(document).ready(function(){
-//   $(".clickable").click(function(){
-//     $("#walrus-showing").slideToggle();
-//     $("#walrus-hidden").slideToggle();
-//   });
-// });
-
-
 $(document).ready(function() {
-  $("button#green").click(function() {
-    $("body").removeClass();
-    $("body").addClass("green-background");
-  });
+  $("#formOne").submit(function() {
+    const person1Input = $("input#person1").val();
+    const person2Input = $("input#person2").val();
+    const animalInput= $("input#animal").val();
+    const exclamationInput = $("input#exclamation").val();
+    const verbInput = $("input#verb").val();
+    const nounInput = $("input#noun").val();
 
-  $("button#yellow").click(function() {
-    $("body").removeClass();
-    $("body").addClass("yellow-background");
-  });
+    $("person1").text(person1Input);
+    $(".person2").text(person2Input);
+    $(".animal").text(animalInput);
+    $(".exclamation").text(exclamationInput);
+    $(".verb").text(verbInput);
+    $(".noun").text(nounInput);
 
-  $("button#red").click(function() {
-    $("body").removeClass();
-    $("body").addClass("red-background");
-  });
-
-  $("button#dMode").click(function() {
-    $("body").removeClass();
-    $("body").addClass("dark-mode");
+    $("#story").sho();
   });
 });
-
